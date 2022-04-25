@@ -30,7 +30,7 @@ export const Admin = () => {
     <form
       className="createEmployee"
       onSubmit={(e) => {
-        handleData;
+        submitData(e);
       }}
     >
       <input
@@ -79,6 +79,7 @@ export const Admin = () => {
         type="text"
         placeholder="Enter tasks separated by commas"
         name="tasks"
+        onChange={handleData}
       />
       <select name="status" id="status" onChange={handleData}>
         <option value="">Select Status</option>
@@ -91,12 +92,7 @@ export const Admin = () => {
         <option value="backend">Backend</option>
         <option value="qa">QA</option>
       </select>
-      <input
-        className="createUser"
-        type="submit"
-        value={"submit"}
-        onChange={handleData}
-      />
+      <input className="createUser" type="submit" value={"submit"} />
     </form>
   );
 };
