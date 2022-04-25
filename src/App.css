@@ -1,0 +1,26 @@
+.App {
+  text-align: center;
+}
+/* .navbar > link {
+  padding: 5px;
+} */
+.nav-home {
+  margin: 5px;
+}
+.nav-list {
+  margin: 5px;
+}
+.nav-admin {
+  margin: 5px;
+}
+.nav-logout {
+  margin: 5px;
+}
+.nav-login {
+  margin: 5px;
+}
+.list_container {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  gap: 25px;
+}
